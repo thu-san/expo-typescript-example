@@ -1,0 +1,53 @@
+{
+  "rulesDirectory": ["node_modules/tslint-eslint-rules/dist/rules"],
+  "extends": ["tslint:latest", "tslint-react", "tslint-config-prettier"],
+  "linterOptions": {
+    "exclude": [
+      "config/**/*.js",
+      "node_modules/**/*.ts",
+      "coverage/lcov-report/*.js"
+    ]
+  },
+  "defaultSeverity": "warning",
+  "rules": {
+    "arrow-return-shorthand": [true, "multiline"],
+    "no-null-keyword": true,
+    "no-switch-case-fall-through": true,
+    "member-access": false,
+    "ordered-imports": false,
+    "object-literal-sort-keys": false,
+    "no-submodule-imports": false,
+    "no-implicit-dependencies": [
+      true,
+      [
+        "assets",
+        "components",
+        "config",
+        "routes",
+        "reducers",
+        "screens",
+        "services",
+        "store",
+        "App"
+      ]
+    ],
+    // ESLint rules for TSLint (tslint-eslint-rules).
+    "block-spacing": [true, "always"],
+    "no-consecutive-blank-lines": [true],
+    "no-constant-condition": true,
+    "no-control-regex": true,
+    "no-duplicate-case": true,
+    "no-empty-character-class": true,
+    "no-ex-assign": true,
+    "no-extra-boolean-cast": true,
+    "no-extra-semi": true,
+    "no-inner-declarations": true,
+    "no-invalid-regexp": true,
+    "no-irregular-whitespace": true,
+    "no-multi-spaces": true,
+    "no-regex-spaces": true,
+    "object-curly-spacing": [true, "always"],
+    "use-isnan": true,
+    "valid-typeof": true
+  }
+}
