@@ -1,1 +1,3 @@
-# Expo with typescript
+# Expo with typescript example
+
+With absolute imports
